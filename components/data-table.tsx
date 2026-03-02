@@ -89,6 +89,7 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 import { Separator } from "@/components/ui/separator"
+import { Switch } from "@/components/ui/switch"
 import {
   Table,
   TableBody,
@@ -103,6 +104,7 @@ import {
   TabsList,
   TabsTrigger,
 } from "@/components/ui/tabs"
+import Link from "next/link"
 
 export const schema = z.object({
   id: z.number(),
@@ -206,17 +208,18 @@ const columns: ColumnDef<z.infer<typeof schema>>[] = [
   },
   {
     accessorKey: "status",
-    header: "Status",
-    cell: ({ row }) => (
-      <Badge variant="outline" className="text-muted-foreground px-1.5">
-        {row.original.status === "Published" ? (
-          <CheckmarkCircle01Icon className="fill-green-500 text-green-500 dark:fill-green-400 dark:text-green-400 size-4 mr-1" />
-        ) : (
-          <Loading01Icon className="size-4 mr-1" />
-        )}
-        {row.original.status}
-      </Badge>
-    ),
+    header: "Public Record",
+    cell: ({ row }) => {
+      const isPublished = row.original.status === "Published"
+      return (
+        <div className="flex items-center gap-2">
+          <Switch checked={isPublished} aria-label="Toggle publish status" />
+          <span className="text-sm text-muted-foreground">
+            {isPublished ? "Live" : "Private"}
+          </span>
+        </div>
+      )
+    },
   },
   {
     id: "actions",
@@ -402,9 +405,11 @@ export function DataTable({
                 })}
             </DropdownMenuContent>
           </DropdownMenu>
-          <Button variant="outline" size="sm">
-            <Add01Icon />
-            <span className="hidden lg:inline">Add Recipe</span>
+          <Button variant="outline" size="sm" asChild>
+            <Link href="/dashboard/my-recipes/new">
+              <Add01Icon />
+              <span className="hidden lg:inline">Add Recipe</span>
+            </Link>
           </Button>
         </div>
       </div>

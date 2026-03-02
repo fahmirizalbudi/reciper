@@ -1,4 +1,5 @@
 "use client"
+import { SignOutButton } from "@/components/sign-out-button"
 
 import {
   CreditCardIcon,
@@ -98,9 +99,11 @@ export function NavUser({
               </DropdownMenuItem>
             </DropdownMenuGroup>
             <DropdownMenuSeparator />
-            <DropdownMenuItem>
-              <Logout01Icon />
-              Log out
+            <DropdownMenuItem asChild>
+              <SignOutButton>
+                <Logout01Icon className="mr-2 size-4" />
+                Log out
+              </SignOutButton>
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>

@@ -1,65 +1,66 @@
-import Image from "next/image";
+import { SiteNavbar } from "@/components/site-navbar"
+import { Search01Icon } from "hugeicons-react"
+import { Input } from "@/components/ui/input"
+import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+    <div className="flex min-h-screen flex-col bg-background">
+      <SiteNavbar />
+      
+      <main className="flex-1">
+        {/* Hero Section */}
+        <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-muted/30">
+          <div className="container px-4 md:px-6 mx-auto text-center">
+            <div className="flex flex-col items-center gap-4">
+              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
+                Cook, Share, Inspire.
+              </h1>
+              <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
+                Discover your next favorite meal or share your culinary masterpiece. Reciper is the community for food enthusiasts.
+              </p>
+              
+              <div className="w-full max-w-lg mt-8 flex items-center gap-2">
+                <div className="relative flex-1">
+                  <Search01Icon className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
+                  <Input
+                    className="w-full bg-background pl-8 shadow-sm"
+                    placeholder="Search for recipes, ingredients, or chefs..."
+                    type="search"
+                  />
+                </div>
+                <Button>Search</Button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Trending Categories Placeholder */}
+        <section className="w-full py-12 md:py-24 lg:py-32">
+          <div className="container px-4 md:px-6 mx-auto">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Trending Right Now</h2>
+              <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                Explore popular dishes from top creators around the globe.
+              </p>
+            </div>
+            <div className="mx-auto mt-12 grid max-w-5xl items-center gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {/* Mock Cards for Layout */}
+              {[1, 2, 3, 4, 5, 6].map((i) => (
+                <div key={i} className="flex flex-col gap-2 rounded-xl border bg-card p-4 shadow-sm text-left">
+                  <div className="aspect-video w-full rounded-lg bg-muted/50"></div>
+                  <h3 className="font-semibold mt-2">Delicious Placeholder Request {i}</h3>
+                  <p className="text-sm text-muted-foreground line-clamp-2">This is a short description of the mock recipe intended to show the UI layout card.</p>
+                  <Link href={`/recipes/${i}`} className="mt-2 text-sm font-medium text-primary hover:underline">
+                    View Recipe &rarr;
+                  </Link>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
       </main>
     </div>
-  );
+  )
 }

@@ -3,7 +3,7 @@
 import * as React from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { AddCircleIcon, Mail01Icon } from "hugeicons-react"
+import { AddCircleIcon, Mail01Icon, Settings01Icon, HelpCircleIcon } from "hugeicons-react"
 
 import { Button } from "@/components/ui/button"
 import {

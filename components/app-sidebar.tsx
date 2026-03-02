@@ -19,7 +19,7 @@ import {
 
 import { NavDocuments } from "@/components/nav-documents"
 import { NavMain } from "@/components/nav-main"
-import { NavSecondary } from "@/components/nav-secondary"
+
 import { NavUser } from "@/components/nav-user"
 import {
   Sidebar,
@@ -59,26 +59,14 @@ const data = {
       icon: ChartHistogramIcon,
     },
     {
-      title: "Community",
-      url: "/dashboard/community",
-      icon: UserGroupIcon,
-    },
-  ],
-  navSecondary: [
-    {
       title: "Settings",
       url: "/dashboard/settings",
       icon: Settings01Icon,
     },
     {
-      title: "Get Help",
+      title: "Help",
       url: "/dashboard/help",
       icon: HelpCircleIcon,
-    },
-    {
-      title: "Search",
-      url: "/dashboard/search",
-      icon: Search01Icon,
     },
   ],
   documents: [
@@ -121,7 +109,6 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       <SidebarContent>
         <NavMain items={data.navMain} />
         <NavDocuments items={data.documents} />
-        <NavSecondary items={data.navSecondary} className="mt-auto" />
       </SidebarContent>
       <SidebarFooter>
         <NavUser user={data.user} />
