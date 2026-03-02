@@ -45,56 +45,56 @@ const data = {
     },
     {
       title: "My Recipes",
-      url: "#",
+      url: "/dashboard/my-recipes",
       icon: Book02Icon,
     },
     {
       title: "Meal Plans",
-      url: "#",
+      url: "/dashboard/meal-plans",
       icon: Calendar02Icon,
     },
     {
       title: "Analytics",
-      url: "#",
+      url: "/dashboard/analytics",
       icon: ChartHistogramIcon,
     },
     {
       title: "Community",
-      url: "#",
+      url: "/dashboard/community",
       icon: UserGroupIcon,
     },
   ],
   navSecondary: [
     {
       title: "Settings",
-      url: "#",
+      url: "/dashboard/settings",
       icon: Settings01Icon,
     },
     {
       title: "Get Help",
-      url: "#",
+      url: "/dashboard/help",
       icon: HelpCircleIcon,
     },
     {
       title: "Search",
-      url: "#",
+      url: "/dashboard/search",
       icon: Search01Icon,
     },
   ],
   documents: [
     {
       name: "Saved Collections",
-      url: "#",
+      url: "/dashboard/saved-collections",
       icon: FolderOpenIcon,
     },
     {
       name: "Dietary Guidelines",
-      url: "#",
+      url: "/dashboard/dietary-guidelines",
       icon: Note01Icon,
     },
     {
       name: "Weekly Reports",
-      url: "#",
+      url: "/dashboard/weekly-reports",
       icon: Analytics01Icon,
     },
   ],
