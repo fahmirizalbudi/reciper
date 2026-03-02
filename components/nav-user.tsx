@@ -1,12 +1,12 @@
 "use client"
 
 import {
-  IconCreditCard,
-  IconDotsVertical,
-  IconLogout,
-  IconNotification,
-  IconUserCircle,
-} from "@tabler/icons-react"
+  CreditCardIcon,
+  MoreVerticalIcon,
+  Logout01Icon,
+  Notification01Icon,
+  UserCircleIcon,
+} from "hugeicons-react"
 
 import {
   Avatar,
@@ -59,7 +59,7 @@ export function NavUser({
                   {user.email}
                 </span>
               </div>
-              <IconDotsVertical className="ml-auto size-4" />
+              <MoreVerticalIcon className="ml-auto size-4" />
             </SidebarMenuButton>
           </DropdownMenuTrigger>
           <DropdownMenuContent
@@ -85,21 +85,21 @@ export function NavUser({
             <DropdownMenuSeparator />
             <DropdownMenuGroup>
               <DropdownMenuItem>
-                <IconUserCircle />
+                <UserCircleIcon />
                 Account
               </DropdownMenuItem>
               <DropdownMenuItem>
-                <IconCreditCard />
+                <CreditCardIcon />
                 Billing
               </DropdownMenuItem>
               <DropdownMenuItem>
-                <IconNotification />
+                <Notification01Icon />
                 Notifications
               </DropdownMenuItem>
             </DropdownMenuGroup>
             <DropdownMenuSeparator />
             <DropdownMenuItem>
-              <IconLogout />
+              <Logout01Icon />
               Log out
             </DropdownMenuItem>
           </DropdownMenuContent>

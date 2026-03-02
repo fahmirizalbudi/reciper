@@ -1,23 +1,21 @@
 "use client"
 
 import * as React from "react"
+import Image from "next/image"
+import Link from "next/link"
 import {
-  IconCamera,
-  IconChartBar,
-  IconDashboard,
-  IconDatabase,
-  IconFileAi,
-  IconFileDescription,
-  IconFileWord,
-  IconFolder,
-  IconHelp,
-  IconInnerShadowTop,
-  IconListDetails,
-  IconReport,
-  IconSearch,
-  IconSettings,
-  IconUsers,
-} from "@tabler/icons-react"
+  DashboardSquare01Icon,
+  Book02Icon,
+  ChartHistogramIcon,
+  Calendar02Icon,
+  UserGroupIcon,
+  Settings01Icon,
+  HelpCircleIcon,
+  Search01Icon,
+  FolderOpenIcon,
+  Analytics01Icon,
+  Note01Icon
+} from "hugeicons-react"
 
 import { NavDocuments } from "@/components/nav-documents"
 import { NavMain } from "@/components/nav-main"
@@ -35,117 +33,69 @@ import {
 
 const data = {
   user: {
-    name: "shadcn",
-    email: "m@example.com",
+    name: "Chef Gordon",
+    email: "gordon@reciper.com",
     avatar: "/avatars/shadcn.jpg",
   },
   navMain: [
     {
       title: "Dashboard",
-      url: "#",
-      icon: IconDashboard,
+      url: "/dashboard",
+      icon: DashboardSquare01Icon,
     },
     {
-      title: "Lifecycle",
+      title: "My Recipes",
       url: "#",
-      icon: IconListDetails,
+      icon: Book02Icon,
+    },
+    {
+      title: "Meal Plans",
+      url: "#",
+      icon: Calendar02Icon,
     },
     {
       title: "Analytics",
       url: "#",
-      icon: IconChartBar,
+      icon: ChartHistogramIcon,
     },
     {
-      title: "Projects",
+      title: "Community",
       url: "#",
-      icon: IconFolder,
-    },
-    {
-      title: "Team",
-      url: "#",
-      icon: IconUsers,
-    },
-  ],
-  navClouds: [
-    {
-      title: "Capture",
-      icon: IconCamera,
-      isActive: true,
-      url: "#",
-      items: [
-        {
-          title: "Active Proposals",
-          url: "#",
-        },
-        {
-          title: "Archived",
-          url: "#",
-        },
-      ],
-    },
-    {
-      title: "Proposal",
-      icon: IconFileDescription,
-      url: "#",
-      items: [
-        {
-          title: "Active Proposals",
-          url: "#",
-        },
-        {
-          title: "Archived",
-          url: "#",
-        },
-      ],
-    },
-    {
-      title: "Prompts",
-      icon: IconFileAi,
-      url: "#",
-      items: [
-        {
-          title: "Active Proposals",
-          url: "#",
-        },
-        {
-          title: "Archived",
-          url: "#",
-        },
-      ],
+      icon: UserGroupIcon,
     },
   ],
   navSecondary: [
     {
       title: "Settings",
       url: "#",
-      icon: IconSettings,
+      icon: Settings01Icon,
     },
     {
       title: "Get Help",
       url: "#",
-      icon: IconHelp,
+      icon: HelpCircleIcon,
     },
     {
       title: "Search",
       url: "#",
-      icon: IconSearch,
+      icon: Search01Icon,
     },
   ],
   documents: [
     {
-      name: "Data Library",
+      name: "Saved Collections",
       url: "#",
-      icon: IconDatabase,
+      icon: FolderOpenIcon,
     },
     {
-      name: "Reports",
+      name: "Dietary Guidelines",
       url: "#",
-      icon: IconReport,
+      icon: Note01Icon,
     },
     {
-      name: "Word Assistant",
+      name: "Weekly Reports",
       url: "#",
-      icon: IconFileWord,
+      icon: Analytics01Icon,
     },
   ],
 }
@@ -160,10 +110,10 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
               asChild
               className="data-[slot=sidebar-menu-button]:!p-1.5"
             >
-              <a href="#">
-                <IconInnerShadowTop className="!size-5" />
-                <span className="text-base font-semibold">Acme Inc.</span>
-              </a>
+              <Link href="/dashboard">
+                <Image src="/logo.svg" alt="Reciper Logo" width={20} height={20} className="rounded-sm" />
+                <span className="text-base font-semibold">Reciper</span>
+              </Link>
             </SidebarMenuButton>
           </SidebarMenuItem>
         </SidebarMenu>
