@@ -2,14 +2,11 @@ import Link from "next/link"
 import Image from "next/image"
 
 import { Button } from "@/components/ui/button"
-import { auth } from "@/auth"
-import { SignOutButton } from "@/components/sign-out-button"
 
-export async function SiteNavbar() {
-  const session = await auth()
+export function SiteNavbar() {
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-background pt-4 pb-2">
+    <header className="sticky top-0 z-[100] w-full bg-background pt-4 pb-2">
       <div className="container flex h-14 items-center justify-between mx-auto px-4 lg:px-6">
         <div className="flex items-center gap-6 md:gap-10">
           <Link href="/" className="flex items-center gap-2">
@@ -24,13 +21,13 @@ export async function SiteNavbar() {
               Recipes
             </Link>
             <Link
-              href="/#features"
+              href="/features"
               className="flex items-center text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
             >
               Features
             </Link>
             <Link
-              href="/#community"
+              href="/community"
               className="flex items-center text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
             >
               Community
@@ -38,20 +35,11 @@ export async function SiteNavbar() {
           </nav>
         </div>
         <div className="flex items-center gap-4">
-          {session ? (
-            <>
-              <Button variant="ghost" asChild className="hidden md:flex">
-                <SignOutButton>Log out</SignOutButton>
-              </Button>
-              <Button asChild>
-                <Link href="/dashboard">Dashboard</Link>
-              </Button>
-            </>
-          ) : (
-            <Button variant="ghost" asChild className="hidden md:flex">
-              <Link href="/login">Admin Login</Link>
-            </Button>
-          )}
+           {/* Public-facing navbar strictly restricts dashboard access.
+               Only the Admin Login is available here. */}
+           <Button variant="ghost" asChild className="hidden md:flex">
+             <Link href="/login">Admin Login</Link>
+           </Button>
         </div>
       </div>
     </header>
