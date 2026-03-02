@@ -57,7 +57,7 @@ export default function FeaturesPage() {
                <div className="flex-1">
                  <h3 className="text-3xl font-black text-foreground mb-4">Ad-Free Cooking Mode</h3>
                  <p className="text-muted-foreground text-lg mb-6">When it's time to cook, switch into a distraction-free mode that keeps your screen awake and instructions large and clear.</p>
-                 <button className="bg-primary text-primary-foreground px-6 py-3 rounded-xl font-bold hover:shadow-lg transition-shadow">Try it entirely free</button>
+                 <button className="bg-primary text-primary-foreground px-8 h-14 rounded-xl font-bold hover:shadow-lg transition-shadow text-base">Try it entirely free</button>
                </div>
                <div className="flex-1 w-full h-full rounded-2xl bg-muted overflow-hidden relative shadow-inner">
                   <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&q=80&w=800')] bg-cover bg-center opacity-80"></div>

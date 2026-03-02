@@ -31,12 +31,12 @@ export default function Home() {
                 <div className="relative flex-1">
                   <Search01Icon className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
                   <Input
-                    className="w-full h-12 bg-transparent border-0 focus-visible:ring-0 pl-12 text-base shadow-none"
+                    className="w-full h-14 bg-transparent border-0 focus-visible:ring-0 pl-12 text-base shadow-none"
                     placeholder="Search for recipes, ingredients, or chefs..."
                     type="search"
                   />
                 </div>
-                <Button size="lg" className="rounded-xl px-8 h-12 text-base shadow-md">Search</Button>
+                <Button size="lg" className="rounded-xl px-8 h-14 text-base shadow-md font-bold">Search</Button>
               </div>
             </div>
           </div>
@@ -136,7 +136,7 @@ export default function Home() {
                   <h3 className="font-bold text-lg">Chef Pro {i}</h3>
                   <p className="text-sm text-primary font-medium mb-3">@chefpro_{i}</p>
                   <p className="text-sm text-muted-foreground mb-6 line-clamp-2">Award-winning pastry chef sharing sweet secrets.</p>
-                  <Button variant="outline" className="w-full rounded-xl hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors">Follow</Button>
+                  <Button variant="outline" className="w-full h-14 rounded-xl hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors text-base font-semibold">Follow</Button>
                 </div>
               ))}
             </div>
@@ -157,8 +157,8 @@ export default function Home() {
                     Get hand-picked culinary inspiration delivered straight to your inbox every Sunday morning. No spam, just delicious food.
                   </p>
                   <div className="flex w-full max-w-md items-center space-x-2 bg-background p-1.5 rounded-2xl shadow-sm mx-auto md:mx-0">
-                    <Input type="email" placeholder="Enter your email address" className="bg-transparent border-0 focus-visible:ring-0 pl-4 h-12 shadow-none" />
-                    <Button type="submit" size="lg" className="rounded-xl px-8 h-12 shadow-md">Subscribe</Button>
+                    <Input type="email" placeholder="Enter your email address" className="bg-transparent border-0 focus-visible:ring-0 pl-4 h-14 text-base shadow-none" />
+                    <Button type="submit" size="lg" className="rounded-xl px-8 h-14 text-base shadow-md font-bold">Subscribe</Button>
                   </div>
                </div>
                

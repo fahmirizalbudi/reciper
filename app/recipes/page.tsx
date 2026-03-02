@@ -18,7 +18,7 @@ export default function RecipesExplorerPage() {
           <div className="w-full md:w-auto relative max-w-sm">
             <Search01Icon className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
             <Input
-              className="w-full h-12 bg-background border-0 focus-visible:ring-0 pl-12 shadow-md rounded-xl text-base ring-1 ring-border/10"
+              className="w-full h-14 text-base bg-background border-0 focus-visible:ring-0 pl-12 shadow-md rounded-xl ring-1 ring-border/10"
               placeholder="Search all recipes..."
               type="search"
             />
@@ -73,29 +73,29 @@ export default function RecipesExplorerPage() {
 
             {/* Visual Pill Navigation */}
             <div className="flex overflow-x-auto gap-3 pb-2 pt-2 scrollbar-hide snap-x">
-               <button className="snap-start shrink-0 px-5 py-2.5 rounded-full bg-primary text-primary-foreground font-semibold shadow-sm text-sm flex items-center gap-2">
+               <button className="snap-start shrink-0 h-14 px-6 rounded-full bg-primary text-primary-foreground font-semibold shadow-sm text-base flex items-center gap-2">
                  All Recipes
                </button>
-               <button className="snap-start shrink-0 px-5 py-2.5 rounded-full bg-card border border-border/10 text-foreground font-medium hover:bg-muted transition-colors text-sm shadow-sm flex items-center gap-2">
+               <button className="snap-start shrink-0 h-14 px-6 rounded-full bg-card border border-border/10 text-foreground font-medium hover:bg-muted transition-colors text-base shadow-sm flex items-center gap-2">
                  🍝 Pasta
                </button>
-               <button className="snap-start shrink-0 px-5 py-2.5 rounded-full bg-card border border-border/10 text-foreground font-medium hover:bg-muted transition-colors text-sm shadow-sm flex items-center gap-2">
+               <button className="snap-start shrink-0 h-14 px-6 rounded-full bg-card border border-border/10 text-foreground font-medium hover:bg-muted transition-colors text-base shadow-sm flex items-center gap-2">
                  🥗 Salads
                </button>
-               <button className="snap-start shrink-0 px-5 py-2.5 rounded-full bg-card border border-border/10 text-foreground font-medium hover:bg-muted transition-colors text-sm shadow-sm flex items-center gap-2">
+               <button className="snap-start shrink-0 h-14 px-6 rounded-full bg-card border border-border/10 text-foreground font-medium hover:bg-muted transition-colors text-base shadow-sm flex items-center gap-2">
                  🥩 Meat
                </button>
-               <button className="snap-start shrink-0 px-5 py-2.5 rounded-full bg-card border border-border/10 text-foreground font-medium hover:bg-muted transition-colors text-sm shadow-sm flex items-center gap-2">
+               <button className="snap-start shrink-0 h-14 px-6 rounded-full bg-card border border-border/10 text-foreground font-medium hover:bg-muted transition-colors text-base shadow-sm flex items-center gap-2">
                  🍰 Desserts
                </button>
-               <button className="snap-start shrink-0 px-5 py-2.5 rounded-full bg-card border border-border/10 text-foreground font-medium hover:bg-muted transition-colors text-sm shadow-sm flex items-center gap-2">
+               <button className="snap-start shrink-0 h-14 px-6 rounded-full bg-card border border-border/10 text-foreground font-medium hover:bg-muted transition-colors text-base shadow-sm flex items-center gap-2">
                  🥣 Soups
                </button>
             </div>
 
             <div className="flex items-center justify-between lg:hidden">
-              <Button variant="outline" className="gap-2 shadow-sm border-0 bg-muted/50 rounded-xl">
-                <FilterIcon className="h-4 w-4" /> Show Filters
+              <Button variant="outline" className="gap-2 shadow-sm border-0 bg-muted/50 rounded-xl h-14 font-semibold text-base w-full">
+                <FilterIcon className="h-5 w-5" /> Show Filters
               </Button>
             </div>
 
@@ -129,7 +129,7 @@ export default function RecipesExplorerPage() {
             </div>
             
             <div className="mt-12 flex justify-center">
-              <Button variant="outline" size="lg" className="rounded-xl border-0 bg-muted/50 shadow-sm hover:bg-muted font-semibold">
+              <Button variant="outline" size="lg" className="rounded-xl border-0 bg-muted/50 shadow-sm hover:bg-muted font-semibold h-14 px-8 text-base">
                 Load More Recipes
               </Button>
             </div>

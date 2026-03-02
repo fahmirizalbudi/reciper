@@ -92,14 +92,14 @@ export default function PublicProfilePage({ params }: { params: { username: stri
                   <div className="pt-6 border-t border-border/10 flex items-center justify-between">
                      <span className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">Follow Me</span>
                      <div className="flex items-center gap-3">
-                        <button className="w-10 h-10 rounded-full bg-background flex items-center justify-center shadow-sm text-muted-foreground hover:text-primary transition-colors">
-                           <InstagramIcon className="w-5 h-5" />
+                        <button className="w-14 h-14 rounded-full bg-background flex items-center justify-center shadow-sm text-muted-foreground hover:text-primary transition-colors">
+                           <InstagramIcon className="w-6 h-6" />
                         </button>
-                        <button className="w-10 h-10 rounded-full bg-background flex items-center justify-center shadow-sm text-muted-foreground hover:text-primary transition-colors">
-                           <TwitterIcon className="w-5 h-5" />
+                        <button className="w-14 h-14 rounded-full bg-background flex items-center justify-center shadow-sm text-muted-foreground hover:text-primary transition-colors">
+                           <TwitterIcon className="w-6 h-6" />
                         </button>
-                        <button className="w-10 h-10 rounded-full bg-background flex items-center justify-center shadow-sm text-muted-foreground hover:text-primary transition-colors">
-                           <Link01Icon className="w-5 h-5" />
+                        <button className="w-14 h-14 rounded-full bg-background flex items-center justify-center shadow-sm text-muted-foreground hover:text-primary transition-colors">
+                           <Link01Icon className="w-6 h-6" />
                         </button>
                      </div>
                   </div>

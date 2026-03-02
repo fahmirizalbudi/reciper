@@ -137,7 +137,7 @@ export default function RecipeDetailsPage({ params }: { params: { id: string } }
                        </div>
                     </div>
                  </div>
-                 <button className="w-full py-3 rounded-xl bg-muted/50 text-foreground font-semibold hover:bg-muted transition-colors text-sm">
+                 <button className="w-full h-14 rounded-xl bg-muted/50 text-foreground font-semibold hover:bg-muted transition-colors text-base px-6">
                   Write a Review
                 </button>
               </div>
@@ -156,7 +156,7 @@ export default function RecipeDetailsPage({ params }: { params: { id: string } }
                 <p className="text-sm text-primary font-medium mb-4">@chef_placeholder</p>
                 <p className="text-sm text-muted-foreground mb-6">Passionate home cook sharing generational recipes and modern twists.</p>
                 
-                <button className="w-full py-3 rounded-xl bg-primary/10 text-primary font-bold hover:bg-primary/20 transition-colors">
+                <button className="w-full h-14 rounded-xl bg-primary/10 text-primary font-bold hover:bg-primary/20 transition-colors text-base px-6">
                   Follow Chef
                 </button>
               </aside>

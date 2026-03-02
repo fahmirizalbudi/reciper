@@ -34,13 +34,6 @@ export function SiteNavbar() {
             </Link>
           </nav>
         </div>
-        <div className="flex items-center gap-4">
-           {/* Public-facing navbar strictly restricts dashboard access.
-               Only the Admin Login is available here. */}
-           <Button variant="ghost" asChild className="hidden md:flex">
-             <Link href="/login">Admin Login</Link>
-           </Button>
-        </div>
       </div>
     </header>
   )
