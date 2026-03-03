@@ -73,7 +73,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
               className="data-[slot=sidebar-menu-button]:!p-1.5"
             >
               <Link href="/dashboard">
-                <Image src="/logo.svg" alt="Reciper Logo" width={20} height={20} className="rounded-sm" />
+                <Image src="/logo.svg" alt="Reciper Logo" width={25} height={25} className="rounded-sm" />
                 <span className="text-base font-semibold">Reciper</span>
               </Link>
             </SidebarMenuButton>
