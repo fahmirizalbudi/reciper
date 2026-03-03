@@ -12,6 +12,7 @@ export default function DashboardLayout({
 }) {
   return (
     <SidebarProvider
+      className="dashboard"
       style={
         {
           "--sidebar-width": "calc(var(--spacing) * 72)",

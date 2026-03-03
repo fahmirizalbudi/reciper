@@ -117,12 +117,14 @@
 }
 
 @layer base {
-  html {
-    font-size: 18px;
+  html:has(.dashboard) {
+    font-size: 19px;
   }
+
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
@@ -133,13 +135,16 @@
   width: 8px;
   height: 8px;
 }
+
 ::-webkit-scrollbar-track {
   background: transparent;
 }
+
 ::-webkit-scrollbar-thumb {
   background: var(--primary);
   border-radius: 4px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: color-mix(in srgb, var(--primary) 80%, black);
 }
