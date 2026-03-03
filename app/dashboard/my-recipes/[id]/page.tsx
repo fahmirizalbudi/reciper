@@ -3,7 +3,7 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Switch } from "@/components/ui/switch"
 import { Label } from "@/components/ui/label"
-import { ArrowLeft02Icon, ImageAdd02Icon, PlusSignIcon } from "hugeicons-react"
+import { PiArrowLeft, PiImageSquare, PiPlus } from "react-icons/pi"
 import Link from "next/link"
 
 export default function RecipeEditorPage({ params }: { params: { id: string } }) {
@@ -15,7 +15,7 @@ export default function RecipeEditorPage({ params }: { params: { id: string } })
         <div className="flex items-center gap-4">
           <Button variant="outline" size="icon" asChild>
             <Link href="/dashboard/my-recipes">
-              <ArrowLeft02Icon className="w-4 h-4" />
+              <PiArrowLeft className="w-4 h-4" />
             </Link>
           </Button>
           <div className="flex flex-col">
@@ -80,7 +80,7 @@ export default function RecipeEditorPage({ params }: { params: { id: string } })
             <div className="flex flex-col gap-4 border rounded-xl p-6 bg-card">
               <div className="flex items-center justify-between">
                 <h2 className="text-lg font-semibold">Ingredients</h2>
-                <Button variant="ghost" size="sm" className="h-8 gap-1"><PlusSignIcon className="w-4 h-4"/> Add row</Button>
+                <Button variant="ghost" size="sm" className="h-8 gap-1"><PiPlus className="w-4 h-4"/> Add row</Button>
               </div>
               <div className="space-y-3">
                  {/* Mock ingredients rows */}
@@ -96,7 +96,7 @@ export default function RecipeEditorPage({ params }: { params: { id: string } })
             <div className="flex flex-col gap-4 border rounded-xl p-6 bg-card">
               <div className="flex items-center justify-between">
                 <h2 className="text-lg font-semibold">Instructions</h2>
-                <Button variant="ghost" size="sm" className="h-8 gap-1"><PlusSignIcon className="w-4 h-4"/> Add step</Button>
+                <Button variant="ghost" size="sm" className="h-8 gap-1"><PiPlus className="w-4 h-4"/> Add step</Button>
               </div>
               <div className="space-y-3">
                  {/* Mock instruction rows */}
@@ -117,7 +117,7 @@ export default function RecipeEditorPage({ params }: { params: { id: string } })
           <div className="flex flex-col gap-4 border rounded-xl p-6 bg-card">
             <h2 className="text-lg font-semibold">Media</h2>
             <div className="aspect-video w-full rounded-lg border-2 border-dashed flex flex-col items-center justify-center gap-2 text-muted-foreground bg-accent/20 cursor-pointer hover:bg-accent/40 transition-colors">
-              <ImageAdd02Icon className="w-8 h-8" />
+              <PiImageSquare className="w-8 h-8" />
               <span className="text-sm font-medium">Upload Cover Image</span>
             </div>
           </div>

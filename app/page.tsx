@@ -1,5 +1,5 @@
 import { SiteNavbar } from "@/components/site-navbar"
-import { Search01Icon } from "hugeicons-react"
+import { PiMagnifyingGlass } from "react-icons/pi"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
@@ -29,7 +29,7 @@ export default function Home() {
               
               <div className="w-full max-w-2xl mt-10 p-2 bg-background/80 backdrop-blur-md rounded-2xl shadow-xl flex items-center gap-2 border border-border/50">
                 <div className="relative flex-1">
-                  <Search01Icon className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
+                  <PiMagnifyingGlass className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
                   <Input
                     className="w-full h-14 bg-transparent border-0 focus-visible:ring-0 pl-12 text-base shadow-none"
                     placeholder="Search for recipes, ingredients, or chefs..."

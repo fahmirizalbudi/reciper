@@ -3,12 +3,7 @@
 import Link from "next/link"
 
 import { usePathname } from "next/navigation"
-import {
-  MoreHorizontalIcon,
-  Folder01Icon,
-  Share01Icon,
-  Delete02Icon,
-} from "hugeicons-react"
+import { PiDotsThree, PiFolder, PiShareNetwork, PiTrash } from "react-icons/pi"
 
 import {
   DropdownMenu,
@@ -57,7 +52,7 @@ export function NavDocuments({
                   showOnHover
                   className="data-[state=open]:bg-accent rounded-sm"
                 >
-                  <MoreHorizontalIcon />
+            <PiDotsThree />
                   <span className="sr-only">More</span>
                 </SidebarMenuAction>
               </DropdownMenuTrigger>
@@ -67,16 +62,16 @@ export function NavDocuments({
                 align={isMobile ? "end" : "start"}
               >
                 <DropdownMenuItem>
-                  <Folder01Icon />
+                  <PiFolder />
                   <span>Open</span>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
-                  <Share01Icon />
+                  <PiShareNetwork />
                   <span>Share</span>
                 </DropdownMenuItem>
                 <DropdownMenuSeparator />
                 <DropdownMenuItem variant="destructive">
-                  <Delete02Icon />
+                  <PiTrash />
                   <span>Delete</span>
                 </DropdownMenuItem>
               </DropdownMenuContent>
@@ -85,7 +80,7 @@ export function NavDocuments({
         ))}
         <SidebarMenuItem>
           <SidebarMenuButton className="text-sidebar-foreground/70">
-            <MoreHorizontalIcon className="text-sidebar-foreground/70" />
+            <PiDotsThree className="text-sidebar-foreground/70" />
             <span>More</span>
           </SidebarMenuButton>
         </SidebarMenuItem>

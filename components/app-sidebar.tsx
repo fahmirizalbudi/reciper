@@ -3,23 +3,9 @@
 import * as React from "react"
 import Image from "next/image"
 import Link from "next/link"
-import {
-  DashboardSquare01Icon,
-  Book02Icon,
-  ChartHistogramIcon,
-  Calendar02Icon,
-  UserGroupIcon,
-  Settings01Icon,
-  HelpCircleIcon,
-  Search01Icon,
-  FolderOpenIcon,
-  Analytics01Icon,
-  Note01Icon
-} from "hugeicons-react"
+import { PiSquaresFour, PiBookOpen, PiCalendarBlank, PiUsersThree, PiGear, PiQuestion, PiChatCircle } from "react-icons/pi"
 
-import { NavDocuments } from "@/components/nav-documents"
 import { NavMain } from "@/components/nav-main"
-
 import { NavUser } from "@/components/nav-user"
 import {
   Sidebar,
@@ -41,49 +27,37 @@ const data = {
     {
       title: "Dashboard",
       url: "/dashboard",
-      icon: DashboardSquare01Icon,
+      icon: PiSquaresFour,
     },
     {
-      title: "My Recipes",
-      url: "/dashboard/my-recipes",
-      icon: Book02Icon,
+      title: "Recipes",
+      url: "/dashboard/recipes",
+      icon: PiBookOpen,
     },
     {
       title: "Meal Plans",
       url: "/dashboard/meal-plans",
-      icon: Calendar02Icon,
+      icon: PiCalendarBlank,
     },
     {
-      title: "Analytics",
-      url: "/dashboard/analytics",
-      icon: ChartHistogramIcon,
+      title: "Users",
+      url: "/dashboard/users",
+      icon: PiUsersThree,
+    },
+    {
+      title: "Comments",
+      url: "/dashboard/comments",
+      icon: PiChatCircle,
     },
     {
       title: "Settings",
       url: "/dashboard/settings",
-      icon: Settings01Icon,
+      icon: PiGear,
     },
     {
       title: "Help",
       url: "/dashboard/help",
-      icon: HelpCircleIcon,
-    },
-  ],
-  documents: [
-    {
-      name: "Saved Collections",
-      url: "/dashboard/saved-collections",
-      icon: FolderOpenIcon,
-    },
-    {
-      name: "Dietary Guidelines",
-      url: "/dashboard/dietary-guidelines",
-      icon: Note01Icon,
-    },
-    {
-      name: "Weekly Reports",
-      url: "/dashboard/weekly-reports",
-      icon: Analytics01Icon,
+      icon: PiQuestion,
     },
   ],
 }
@@ -108,7 +82,6 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       </SidebarHeader>
       <SidebarContent>
         <NavMain items={data.navMain} />
-        <NavDocuments items={data.documents} />
       </SidebarContent>
       <SidebarFooter>
         <NavUser user={data.user} />

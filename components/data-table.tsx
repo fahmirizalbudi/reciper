@@ -20,18 +20,7 @@ import {
   verticalListSortingStrategy,
 } from "@dnd-kit/sortable"
 import { CSS } from "@dnd-kit/utilities"
-import {
-  ArrowDown01Icon,
-  ArrowLeft01Icon,
-  ArrowRight01Icon,
-  CheckmarkCircle01Icon,
-  MoreVerticalIcon,
-  Menu01Icon,
-  Layout01Icon,
-  Loading01Icon,
-  Add01Icon,
-  ArrowUpRight01Icon,
-} from "hugeicons-react"
+import { PiArrowDown, PiArrowLeft, PiArrowRight, PiCheckCircle, PiDotsThreeVertical, PiList, PiSquaresFour, PiSpinnerGap, PiPlus, PiArrowUpRight } from "react-icons/pi"
 import {
   flexRender,
   getCoreRowModel,
@@ -129,7 +118,7 @@ function DragHandle({ id }: { id: number }) {
       size="icon"
       className="text-muted-foreground size-7 hover:bg-transparent"
     >
-      <Menu01Icon className="text-muted-foreground size-3" />
+      <PiList className="text-muted-foreground size-3" />
       <span className="sr-only">Drag to reorder</span>
     </Button>
   )
@@ -231,7 +220,7 @@ const columns: ColumnDef<z.infer<typeof schema>>[] = [
             className="data-[state=open]:bg-muted text-muted-foreground flex size-8"
             size="icon"
           >
-            <MoreVerticalIcon />
+            <PiDotsThreeVertical />
             <span className="sr-only">Open menu</span>
           </Button>
         </DropdownMenuTrigger>
@@ -375,10 +364,10 @@ export function DataTable({
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="outline" size="sm">
-                <Layout01Icon />
+                <PiSquaresFour />
                 <span className="hidden lg:inline">Columns</span>
                 <span className="lg:hidden">Cols</span>
-                <ArrowDown01Icon />
+                <PiArrowDown />
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end" className="w-56">
@@ -407,7 +396,7 @@ export function DataTable({
           </DropdownMenu>
           <Button variant="outline" size="sm" asChild>
             <Link href="/dashboard/my-recipes/new">
-              <Add01Icon />
+              <PiPlus />
               <span className="hidden lg:inline">Add Recipe</span>
             </Link>
           </Button>
@@ -510,7 +499,7 @@ export function DataTable({
                 disabled={!table.getCanPreviousPage()}
               >
                 <span className="sr-only">Go to first page</span>
-                <ArrowLeft01Icon />
+                <PiArrowLeft />
               </Button>
               <Button
                 variant="outline"
@@ -520,7 +509,7 @@ export function DataTable({
                 disabled={!table.getCanPreviousPage()}
               >
                 <span className="sr-only">Go to previous page</span>
-                <ArrowLeft01Icon />
+                <PiArrowLeft />
               </Button>
               <Button
                 variant="outline"
@@ -530,7 +519,7 @@ export function DataTable({
                 disabled={!table.getCanNextPage()}
               >
                 <span className="sr-only">Go to next page</span>
-                <ArrowRight01Icon />
+                <PiArrowRight />
               </Button>
               <Button
                 variant="outline"
@@ -540,7 +529,7 @@ export function DataTable({
                 disabled={!table.getCanNextPage()}
               >
                 <span className="sr-only">Go to last page</span>
-                <ArrowRight01Icon />
+                <PiArrowRight />
               </Button>
             </div>
           </div>
@@ -649,7 +638,7 @@ function TableCellViewer({ item }: { item: z.infer<typeof schema> }) {
               <div className="grid gap-2">
                 <div className="flex gap-2 leading-none font-medium">
                   Views up by 12.3% this month{" "}
-                  <ArrowUpRight01Icon className="size-4" />
+                  <PiArrowUpRight className="size-4" />
                 </div>
                 <div className="text-muted-foreground">
                   Showing engagement metrics over the last 6 months. Users seem to love this recipe. 

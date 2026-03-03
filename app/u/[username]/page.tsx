@@ -1,5 +1,5 @@
 import { SiteNavbar } from "@/components/site-navbar"
-import { UserCircleIcon, InstagramIcon, TwitterIcon, Link01Icon } from "hugeicons-react"
+import { PiUserCircle, PiInstagramLogo, PiTwitterLogo, PiLink } from "react-icons/pi"
 
 export default function PublicProfilePage({ params }: { params: { username: string } }) {
   return (
@@ -21,7 +21,7 @@ export default function PublicProfilePage({ params }: { params: { username: stri
               <div className="flex flex-col md:flex-row items-center md:items-end gap-6 text-center md:text-left">
                 <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-background flex items-center justify-center shadow-lg p-2 ring-1 ring-border/20">
                   <div className="w-full h-full rounded-full bg-primary/10 flex items-center justify-center overflow-hidden relative">
-                    <UserCircleIcon className="w-16 h-16 text-primary absolute" />
+                    <PiUserCircle className="w-16 h-16 text-primary absolute" />
                   </div>
                 </div>
                 <div className="mb-2">
@@ -93,13 +93,13 @@ export default function PublicProfilePage({ params }: { params: { username: stri
                      <span className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">Follow Me</span>
                      <div className="flex items-center gap-3">
                         <button className="w-14 h-14 rounded-full bg-background flex items-center justify-center shadow-sm text-muted-foreground hover:text-primary transition-colors">
-                           <InstagramIcon className="w-6 h-6" />
+                           <PiInstagramLogo className="w-6 h-6" />
                         </button>
                         <button className="w-14 h-14 rounded-full bg-background flex items-center justify-center shadow-sm text-muted-foreground hover:text-primary transition-colors">
-                           <TwitterIcon className="w-6 h-6" />
+                           <PiTwitterLogo className="w-6 h-6" />
                         </button>
                         <button className="w-14 h-14 rounded-full bg-background flex items-center justify-center shadow-sm text-muted-foreground hover:text-primary transition-colors">
-                           <Link01Icon className="w-6 h-6" />
+                           <PiLink className="w-6 h-6" />
                         </button>
                      </div>
                   </div>

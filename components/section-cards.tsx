@@ -1,4 +1,4 @@
-import { ArrowDown01Icon, ArrowUp01Icon } from "hugeicons-react"
+import { PiArrowDown, PiArrowUp } from "react-icons/pi"
 
 import { Badge } from "@/components/ui/badge"
 import {
@@ -21,14 +21,14 @@ export function SectionCards() {
           </CardTitle>
           <CardAction>
             <Badge variant="outline">
-              <ArrowUp01Icon />
+              <PiArrowUp />
               +5%
             </Badge>
           </CardAction>
         </CardHeader>
         <CardFooter className="flex-col items-start gap-1.5 text-sm">
           <div className="line-clamp-1 flex gap-2 font-medium">
-            Active additions this month <ArrowUp01Icon className="size-4" />
+            Active additions this month <PiArrowUp className="size-4" />
           </div>
           <div className="text-muted-foreground">
             Recipes added over the last 6 months
@@ -43,14 +43,14 @@ export function SectionCards() {
           </CardTitle>
           <CardAction>
             <Badge variant="outline">
-              <ArrowUp01Icon />
+              <PiArrowUp />
               +20%
             </Badge>
           </CardAction>
         </CardHeader>
         <CardFooter className="flex-col items-start gap-1.5 text-sm">
           <div className="line-clamp-1 flex gap-2 font-medium">
-            Up 20% this period <ArrowUp01Icon className="size-4" />
+            Up 20% this period <PiArrowUp className="size-4" />
           </div>
           <div className="text-muted-foreground">
             More users are planning meals
@@ -65,14 +65,14 @@ export function SectionCards() {
           </CardTitle>
           <CardAction>
             <Badge variant="outline">
-              <ArrowUp01Icon />
+              <PiArrowUp />
               +12.5%
             </Badge>
           </CardAction>
         </CardHeader>
         <CardFooter className="flex-col items-start gap-1.5 text-sm">
           <div className="line-clamp-1 flex gap-2 font-medium">
-            Strong engagement <ArrowUp01Icon className="size-4" />
+            Strong engagement <PiArrowUp className="size-4" />
           </div>
           <div className="text-muted-foreground">User favorites exceed targets</div>
         </CardFooter>
@@ -85,14 +85,14 @@ export function SectionCards() {
           </CardTitle>
           <CardAction>
             <Badge variant="outline">
-              <ArrowDown01Icon />
+              <PiArrowDown />
               -1.5%
             </Badge>
           </CardAction>
         </CardHeader>
         <CardFooter className="flex-col items-start gap-1.5 text-sm">
           <div className="line-clamp-1 flex gap-2 font-medium">
-            Slight dip in activity <ArrowDown01Icon className="size-4" />
+            Slight dip in activity <PiArrowDown className="size-4" />
           </div>
           <div className="text-muted-foreground">Below expected projections</div>
         </CardFooter>

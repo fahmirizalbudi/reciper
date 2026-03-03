@@ -1,5 +1,5 @@
 import { SiteNavbar } from "@/components/site-navbar"
-import { Clock01Icon, FireIcon, UserGroupIcon, StarIcon } from "hugeicons-react"
+import { PiClock, PiFire, PiUsersThree, PiStar } from "react-icons/pi"
 
 export default function RecipeDetailsPage({ params }: { params: { id: string } }) {
   return (
@@ -10,7 +10,6 @@ export default function RecipeDetailsPage({ params }: { params: { id: string } }
         {/* Immersive Recipe Hero */}
         <div className="w-full h-[400px] md:h-[500px] bg-muted relative">
            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10"></div>
-           {/* Image Mock */}
            <div className="absolute inset-0 flex items-center justify-center text-muted-foreground z-0 bg-[url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&q=80&w=2000')] bg-cover bg-center">
              
            </div>
@@ -24,9 +23,9 @@ export default function RecipeDetailsPage({ params }: { params: { id: string } }
                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white drop-shadow-md mb-4 leading-tight">Public Recipe Details #{params.id}</h1>
                    
                    <div className="flex flex-wrap items-center gap-6 text-white/90 font-medium">
-                     <div className="flex items-center gap-2"><Clock01Icon className="w-5 h-5"/> <span>45 Mins</span></div>
-                     <div className="flex items-center gap-2"><UserGroupIcon className="w-5 h-5"/> <span>4 Servings</span></div>
-                     <div className="flex items-center gap-2"><FireIcon className="w-5 h-5"/> <span>350 kcal</span></div>
+                     <div className="flex items-center gap-2"><PiClock className="w-5 h-5" /> <span>45 Mins</span></div>
+                     <div className="flex items-center gap-2"><PiUsersThree className="w-5 h-5" /> <span>4 Servings</span></div>
+                     <div className="flex items-center gap-2"><PiFire className="w-5 h-5" /> <span>350 kcal</span></div>
                    </div>
                  </div>
               </div>
@@ -107,11 +106,11 @@ export default function RecipeDetailsPage({ params }: { params: { id: string } }
                      <div className="flex flex-col items-center">
                        <span className="text-4xl font-black text-foreground">4.8</span>
                        <div className="flex text-amber-500 mt-1">
-                          <StarIcon className="w-4 h-4 fill-amber-500" />
-                          <StarIcon className="w-4 h-4 fill-amber-500" />
-                          <StarIcon className="w-4 h-4 fill-amber-500" />
-                          <StarIcon className="w-4 h-4 fill-amber-500" />
-                          <StarIcon className="w-4 h-4 fill-amber-500" />
+                          <PiStar className="w-4 h-4 fill-amber-500" />
+                          <PiStar className="w-4 h-4 fill-amber-500" />
+                          <PiStar className="w-4 h-4 fill-amber-500" />
+                          <PiStar className="w-4 h-4 fill-amber-500" />
+                          <PiStar className="w-4 h-4 fill-amber-500" />
                        </div>
                      </div>
                    </div>
@@ -127,11 +126,11 @@ export default function RecipeDetailsPage({ params }: { params: { id: string } }
                              <span className="text-xs text-muted-foreground">2 days ago</span>
                           </div>
                           <div className="flex text-amber-500 mb-2">
-                             <StarIcon className="w-3 h-3 fill-amber-500" />
-                             <StarIcon className="w-3 h-3 fill-amber-500" />
-                             <StarIcon className="w-3 h-3 fill-amber-500" />
-                             <StarIcon className="w-3 h-3 fill-amber-500" />
-                             <StarIcon className="w-3 h-3 fill-amber-500" />
+                             <PiStar className="w-3 h-3 fill-amber-500" />
+                             <PiStar className="w-3 h-3 fill-amber-500" />
+                             <PiStar className="w-3 h-3 fill-amber-500" />
+                             <PiStar className="w-3 h-3 fill-amber-500" />
+                             <PiStar className="w-3 h-3 fill-amber-500" />
                           </div>
                           <p className="text-sm text-foreground/80 leading-relaxed">Absolutely phenomenal! I made this for a dinner party and it was a massive hit. The instructions were pristine and the bold flavor profiling is unmatched.</p>
                        </div>

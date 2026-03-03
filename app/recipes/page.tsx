@@ -1,5 +1,5 @@
 import { SiteNavbar } from "@/components/site-navbar"
-import { Search01Icon, FilterIcon, ArrowDown01Icon } from "hugeicons-react"
+import { PiMagnifyingGlass, PiFunnel, PiSortAscending } from "react-icons/pi"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 
@@ -16,7 +16,7 @@ export default function RecipesExplorerPage() {
             <p className="text-muted-foreground text-lg md:text-xl max-w-xl">Find the perfect dish for any occasion. Filter by category, difficulty, or diet.</p>
           </div>
           <div className="w-full md:w-auto relative max-w-sm">
-            <Search01Icon className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
+            <PiMagnifyingGlass className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
             <Input
               className="w-full h-14 text-base bg-background border-0 focus-visible:ring-0 pl-12 shadow-md rounded-xl ring-1 ring-border/10"
               placeholder="Search all recipes..."
@@ -32,7 +32,7 @@ export default function RecipesExplorerPage() {
           {/* Filter Sidebar */}
           <aside className="hidden lg:flex flex-col gap-8 sticky top-24">
             <div>
-              <h3 className="font-bold text-lg mb-4 flex items-center justify-between">Difficulty <ArrowDown01Icon className="w-4 h-4" /></h3>
+              <h3 className="font-bold text-lg mb-4 flex items-center justify-between">Difficulty <PiSortAscending className="w-4 h-4" /></h3>
               <ul className="space-y-3 text-sm text-muted-foreground">
                 <li className="flex items-center gap-2"><div className="w-4 h-4 rounded border bg-background grid place-items-center"></div> Easy</li>
                 <li className="flex items-center gap-2"><div className="w-4 h-4 rounded border bg-background grid place-items-center"></div> Medium</li>
@@ -41,7 +41,7 @@ export default function RecipesExplorerPage() {
             </div>
             
             <div>
-              <h3 className="font-bold text-lg mb-4 flex items-center justify-between">Dietary <ArrowDown01Icon className="w-4 h-4" /></h3>
+              <h3 className="font-bold text-lg mb-4 flex items-center justify-between">Dietary <PiSortAscending className="w-4 h-4" /></h3>
               <ul className="space-y-3 text-sm text-muted-foreground">
                 <li className="flex items-center gap-2"><div className="w-4 h-4 rounded border bg-background grid place-items-center"></div> Vegetarian</li>
                 <li className="flex items-center gap-2"><div className="w-4 h-4 rounded border bg-background grid place-items-center"></div> Vegan</li>
@@ -95,14 +95,14 @@ export default function RecipesExplorerPage() {
 
             <div className="flex items-center justify-between lg:hidden">
               <Button variant="outline" className="gap-2 shadow-sm border-0 bg-muted/50 rounded-xl h-14 font-semibold text-base w-full">
-                <FilterIcon className="h-5 w-5" /> Show Filters
+                <PiFunnel className="h-5 w-5" /> Show Filters
               </Button>
             </div>
 
             <div className="flex items-center justify-between pb-4">
                <p className="text-muted-foreground font-medium">Showing <strong className="text-foreground">24</strong> recipes</p>
                <div className="flex items-center gap-2 text-sm text-muted-foreground font-medium cursor-pointer">
-                 Sort by: Newest <ArrowDown01Icon className="w-4 h-4" />
+                 Sort by: Newest <PiSortAscending className="w-4 h-4" />
                </div>
             </div>
 

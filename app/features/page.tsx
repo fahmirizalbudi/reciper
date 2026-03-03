@@ -1,5 +1,5 @@
 import { SiteNavbar } from "@/components/site-navbar"
-import { CheckmarkCircle01Icon } from "hugeicons-react"
+import { PiCheckCircle } from "react-icons/pi"
 
 export default function FeaturesPage() {
   return (
@@ -36,7 +36,7 @@ export default function FeaturesPage() {
             {/* Side Feature */}
             <div className="group rounded-3xl overflow-hidden relative shadow-sm border border-border/10 bg-card p-8 flex flex-col">
                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-6">
-                 <CheckmarkCircle01Icon className="w-6 h-6 text-primary" />
+                 <PiCheckCircle className="w-6 h-6 text-primary" />
                </div>
                <h3 className="text-2xl font-bold text-foreground mb-3">Weekly Meal Plans</h3>
                <p className="text-muted-foreground flex-1">Drag and drop your favorite recipes into a weekly calendar. Generate automated shopping lists with one click.</p>

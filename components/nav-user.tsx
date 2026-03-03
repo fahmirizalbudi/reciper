@@ -1,13 +1,7 @@
 "use client"
 import { SignOutButton } from "@/components/sign-out-button"
 
-import {
-  CreditCardIcon,
-  MoreVerticalIcon,
-  Logout01Icon,
-  Notification01Icon,
-  UserCircleIcon,
-} from "hugeicons-react"
+import { PiCreditCard, PiDotsThreeVertical, PiSignOut, PiBell, PiUserCircle } from "react-icons/pi"
 
 import {
   Avatar,
@@ -60,7 +54,7 @@ export function NavUser({
                   {user.email}
                 </span>
               </div>
-              <MoreVerticalIcon className="ml-auto size-4" />
+              <PiDotsThreeVertical className="ml-auto size-4" />
             </SidebarMenuButton>
           </DropdownMenuTrigger>
           <DropdownMenuContent
@@ -86,22 +80,22 @@ export function NavUser({
             <DropdownMenuSeparator />
             <DropdownMenuGroup>
               <DropdownMenuItem>
-                <UserCircleIcon />
+                <PiUserCircle />
                 Account
               </DropdownMenuItem>
               <DropdownMenuItem>
-                <CreditCardIcon />
+                <PiCreditCard />
                 Billing
               </DropdownMenuItem>
               <DropdownMenuItem>
-                <Notification01Icon />
+                <PiBell />
                 Notifications
               </DropdownMenuItem>
             </DropdownMenuGroup>
             <DropdownMenuSeparator />
             <DropdownMenuItem asChild>
               <SignOutButton>
-                <Logout01Icon className="mr-2 size-4" />
+                <PiSignOut className="mr-2 size-4" />
                 Log out
               </SignOutButton>
             </DropdownMenuItem>
