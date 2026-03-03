@@ -29,6 +29,36 @@ const data = {
       url: "/dashboard",
       icon: PiSquaresFour,
     },
+    {
+      title: "Recipes",
+      url: "/dashboard/recipes",
+      icon: PiBookOpen,
+    },
+    {
+      title: "Meal Plans",
+      url: "/dashboard/meal-plans",
+      icon: PiCalendarBlank,
+    },
+    {
+      title: "Users",
+      url: "/dashboard/users",
+      icon: PiUsersThree,
+    },
+    {
+      title: "Comments",
+      url: "/dashboard/comments",
+      icon: PiChatCircle,
+    },
+    {
+      title: "Settings",
+      url: "/dashboard/settings",
+      icon: PiGear,
+    },
+    {
+      title: "Help",
+      url: "/dashboard/help",
+      icon: PiQuestion,
+    },
   ],
 }
 
