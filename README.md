@@ -17,9 +17,7 @@
 
 ## Culinaire
 
-Culinaire is a modern SaaS recipe application. It features a stunning "Ethereal SaaS 2026" aesthetic with pure white backgrounds, zero borders, volumetric shadows, and perfectly spaced typography. It allows users to read recipes without the distraction of life stories.
-
-Key features include:
+Culinaire is a modern SaaS recipe application. It features a stunning "Ethereal SaaS 2026" aesthetic with pure white backgrounds, zero borders, volumetric shadows, and perfectly spaced typography. It allows users to read recipes without the distraction of life stories. Key features include:
 
 ## Preview
 
