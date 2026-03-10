@@ -9,7 +9,16 @@ const figtree = Figtree({
 const playfairDisplay = Playfair_Display({
   variable: "--font-playfair-display",
   subsets: ["latin"],
-})
+});
+
+export const metadata = {
+  title: "Culinaire - Read recipes, not life stories.",
+  description: "A fast, modern recipe manager designed to stay out of your way.",
+  icons: {
+    icon: "/logo.svg",
+    apple: "/logo.svg",
+  },
+};
 
 export default function RootLayout({
   children,

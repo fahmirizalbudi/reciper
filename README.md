@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
+<a href="https://github.com/fahmirizalbudi/reciper" target="blank">
+<img src="./public/logo.svg" width="120" alt="Culinaire Logo" />
+</a>
+<br/>
+
+<br />
+<br />
+
+![](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
+![](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+
+</div>
+
+<br />
+
+## Culinaire
+
+Culinaire is a modern SaaS recipe application. It features a stunning "Ethereal SaaS 2026" aesthetic with pure white backgrounds, zero borders, volumetric shadows, and perfectly spaced typography. It allows users to read recipes without the distraction of life stories.
+
+Key features include:
+
+## Preview
+
+![](image.png)
+
+## Features
+
+- **Blazing Fast:** Powered by Next.js App Router for instant loading and SEO optimization.
+- **Modern UI/UX:** An elegant, borderless aesthetic utilizing `Playfair Display` and `Figtree` typography, combined with smooth hovering shadows.
+- **Distraction-Free:** Focus purely on the ingredients and steps without ads or popups.
+- **Smart Scaling:** Seamlessly scale your ingredients with zero manual math.
+- **Interactive Carousel:** Fluid recipe discovery using Embla Carousel.
+
+## Tech Stack
+
+- **Next.js (App Router)**: The React Framework for the Web.
+- **Tailwind CSS v4**: A utility-first CSS framework for rapid UI development.
+- **HugeIcons React**: A massive, premium icon set to maintain visual consistency.
+- **Embla Carousel**: A lightweight carousel library with fluid physics.
 
 ## Getting Started
 
-First, run the development server:
+To get a local copy of this project up and running, follow these steps.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Prerequisites
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Node.js** & **NPM** (or **pnpm** / **Yarn**).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Clone the repository:**
 
-## Learn More
+   ```bash
+   git clone https://github.com/fahmirizalbudi/reciper.git
+   cd reciper
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. **Install dependencies:**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   npm install
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. **Start the development server:**
 
-## Deploy on Vercel
+   ```bash
+   npm run dev
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Usage
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Running the Application
+
+- **Development mode:** `npm run dev`.
+- **Production mode:** `npm run build` followed by `npm start`.
+
+> Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+## License
+
+All rights reserved. This project is for educational purposes only and cannot be used or distributed without permission.

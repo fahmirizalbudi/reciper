@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { Button } from "./components/ui/Button";
 import { RecipeCarousel } from "./components/ui/RecipeCarousel";
 import { BookOpen01Icon, Settings01Icon, Link04Icon, Search01Icon } from "hugeicons-react";
@@ -56,8 +57,8 @@ export default function LandingPage() {
       <nav className="fixed top-0 inset-x-0 z-50 h-20 bg-white/80 backdrop-blur-xl shadow-[0_4px_20px_rgb(0,0,0,0.06)]">
         <div className="max-w-7xl mx-auto h-full px-6 flex items-center justify-between">
           <div className="flex items-center gap-2 cursor-pointer">
-            <div className="w-8 h-8 rounded-full bg-primary-base flex items-center justify-center text-white font-serif font-bold text-lg shadow-[0_4px_10px_rgb(234,88,12,0.3)]">
-              C
+            <div className="relative w-8 h-8 shadow-[0_4px_10px_rgb(234,88,12,0.3)] rounded-full">
+              <Image src="/logo.svg" alt="Culinaire Logo" fill className="object-cover" />
             </div>
             <span className="font-serif text-xl font-semibold text-text-primary tracking-tight">
               Culinaire
