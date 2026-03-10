@@ -1,0 +1,82 @@
+/*
+  Primitive token scaffold.
+  Replace values per project direction before final implementation.
+*/
+
+:root {
+  /* Typography */
+  --font-display: "Fraunces", "Iowan Old Style", "Georgia", serif;
+  --font-body: "Manrope", "Avenir Next", "Helvetica Neue", sans-serif;
+  --font-mono: "IBM Plex Mono", "SFMono-Regular", ui-monospace, monospace;
+
+  --step--1: clamp(0.84rem, 0.8rem + 0.2vw, 0.94rem);
+  --step-0: clamp(1rem, 0.95rem + 0.32vw, 1.15rem);
+  --step-1: clamp(1.22rem, 1.1rem + 0.55vw, 1.48rem);
+  --step-2: clamp(1.48rem, 1.3rem + 0.9vw, 1.95rem);
+  --step-3: clamp(1.8rem, 1.55rem + 1.2vw, 2.5rem);
+  --step-4: clamp(2.2rem, 1.85rem + 1.8vw, 3.25rem);
+
+  --leading-tight: 1.15;
+  --leading-regular: 1.45;
+  --leading-relaxed: 1.7;
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+
+  /* Radius */
+  --radius-xs: 0.375rem;
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-pill: 999px;
+
+  /* Elevation */
+  --shadow-sm: 0 1px 2px hsl(220 30% 15% / 0.08);
+  --shadow-md: 0 6px 18px hsl(220 30% 15% / 0.14);
+  --shadow-lg: 0 16px 36px hsl(220 30% 15% / 0.2);
+
+  /* Core palette (replace with project palette) */
+  --color-bg: hsl(220 24% 97%);
+  --color-surface: hsl(0 0% 100%);
+  --color-surface-2: hsl(220 27% 95%);
+  --color-text: hsl(223 30% 14%);
+  --color-muted: hsl(220 14% 38%);
+  --color-border: hsl(220 18% 83%);
+
+  --color-primary: hsl(200 89% 42%);
+  --color-primary-contrast: hsl(0 0% 100%);
+  --color-accent: hsl(16 84% 58%);
+
+  --color-success: hsl(148 66% 33%);
+  --color-warning: hsl(36 88% 46%);
+  --color-danger: hsl(358 71% 46%);
+
+  /* Focus ring */
+  --focus-ring: 0 0 0 3px hsl(200 95% 45% / 0.36);
+
+  /* Layout */
+  --max-page-width: 74rem;
+  --max-reading-width: 68ch;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: hsl(221 25% 10%);
+    --color-surface: hsl(220 20% 14%);
+    --color-surface-2: hsl(220 18% 18%);
+    --color-text: hsl(214 32% 94%);
+    --color-muted: hsl(214 14% 68%);
+    --color-border: hsl(218 20% 28%);
+    --shadow-sm: 0 1px 2px hsl(0 0% 0% / 0.42);
+    --shadow-md: 0 6px 18px hsl(0 0% 0% / 0.48);
+    --shadow-lg: 0 16px 36px hsl(0 0% 0% / 0.6);
+  }
+}

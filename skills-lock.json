@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "all-in-one-ui-ux-design": {
+      "source": "luisjppm/skills",
+      "sourceType": "github",
+      "computedHash": "ee85ce1b23a6ff4986e75e12be18c69b359b294603e50fbe50dcb6be2469186e"
+    }
+  }
+}

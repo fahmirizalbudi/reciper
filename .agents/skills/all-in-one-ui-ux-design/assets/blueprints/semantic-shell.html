@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Project Shell</title>
+    <link rel="stylesheet" href="../primitives/tokens.css" />
+    <link rel="stylesheet" href="../primitives/layout.css" />
+    <link rel="stylesheet" href="../primitives/motion.css" />
+    <link rel="stylesheet" href="../primitives/component-states.css" />
+  </head>
+  <body>
+    <a href="#main" class="btn btn--ghost">Skip to content</a>
+
+    <header class="section">
+      <div class="container cluster" style="justify-content: space-between;">
+        <div class="cluster" role="img" aria-label="Brand">
+          <strong>Brand</strong>
+        </div>
+        <nav aria-label="Primary">
+          <ul class="cluster" style="list-style: none; margin: 0; padding: 0;">
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="section">
+        <div class="container stack" style="--stack-space: var(--space-5);">
+          <h1 style="font-size: var(--step-4);">Project headline goes here</h1>
+          <p class="reading-width">
+            Replace this with project-specific copy. Keep hierarchy clear and tone aligned
+            with the selected visual direction.
+          </p>
+          <div class="cluster">
+            <a class="btn pressable" href="#">Primary action</a>
+            <a class="btn btn--ghost pressable" href="#">Secondary action</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container grid-3">
+          <article class="card stack" style="--stack-space: var(--space-3);">
+            <h2 style="font-size: var(--step-1);">Card title</h2>
+            <p>Slot for a specific value statement.</p>
+          </article>
+          <article class="card stack" style="--stack-space: var(--space-3);">
+            <h2 style="font-size: var(--step-1);">Card title</h2>
+            <p>Slot for a specific value statement.</p>
+          </article>
+          <article class="card stack" style="--stack-space: var(--space-3);">
+            <h2 style="font-size: var(--step-1);">Card title</h2>
+            <p>Slot for a specific value statement.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="section">
+      <div class="container">
+        <small>Replace with project footer content.</small>
+      </div>
+    </footer>
+  </body>
+</html>

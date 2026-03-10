@@ -1,0 +1,141 @@
+/*
+  Accessible component state primitives.
+  Pair with project-specific styling; keep semantic HTML in markup.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+  line-height: var(--leading-tight);
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  min-height: 44px;
+  min-width: 44px;
+  padding: 0.65rem 1rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid transparent;
+  background: var(--color-primary);
+  color: var(--color-primary-contrast);
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn:hover {
+  filter: brightness(0.95);
+}
+
+.btn:focus-visible {
+  outline: 0;
+  box-shadow: var(--focus-ring);
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn[disabled],
+.btn[aria-disabled="true"] {
+  opacity: 0.55;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.btn--ghost {
+  background: transparent;
+  color: var(--color-text);
+  border-color: var(--color-border);
+}
+
+.field {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.field__label {
+  font-size: var(--step--1);
+  font-weight: 600;
+}
+
+.field__control {
+  width: 100%;
+  min-height: 44px;
+  padding: 0.6rem 0.75rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text);
+}
+
+.field__control::placeholder {
+  color: var(--color-muted);
+}
+
+.field__control:hover {
+  border-color: color-mix(in oklab, var(--color-border), var(--color-text) 24%);
+}
+
+.field__control:focus-visible {
+  outline: 0;
+  border-color: var(--color-primary);
+  box-shadow: var(--focus-ring);
+}
+
+.field--error .field__control {
+  border-color: var(--color-danger);
+}
+
+.field__error {
+  color: var(--color-danger);
+  font-size: var(--step--1);
+}
+
+.card {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-5);
+}
+
+.card--interactive {
+  cursor: pointer;
+}
+
+.card--interactive:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.card--interactive:focus-visible {
+  outline: 0;
+  box-shadow: var(--focus-ring), var(--shadow-md);
+}
